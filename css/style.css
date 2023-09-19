@@ -150,8 +150,9 @@ footer .navbar-nav .nav-item .nav-link{
     .carousel-caption p a{
         padding: 8px 5px;
         font-size: 0.8rem;
-    }.service .card-body{
-        height: 40vh;
+    }
+    .service .card-body{
+        height: 45vh;
     }
     footer ul li a{
         font-size: 0.2rem;
