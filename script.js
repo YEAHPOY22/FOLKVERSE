@@ -1,18 +1,33 @@
+let senderName = document.querySelector('#senderName').value;
+let email = document.querySelector('#email').value;
+let message = document.querySelector('#message').value;
+
+
 (function() {
     // https://dashboard.emailjs.com/admin/account
     emailjs.init('T8L8dKd-WJKco-DbU');
 })();
+
+
+
 window.onload = function() {
    document.getElementById('contact-form').addEventListener('submit', function(event) {
        event.preventDefault();
-       // generate a five digit number for the contact_number variable
-       this.senderName.value = Math.random() * 100000 | 0;
+       // Check if the form input is not empty
+       var templateParams = {
+        senderName : senderName,
+        email : email,
+        message : message
+    };
+       
        // these IDs from the previous steps
-       emailjs.sendForm('service_4seg50s', 'template_2z8jbxf', this)
+       emailjs.send("service_4seg50s","template_2z8jbxf", templateParams)
            .then(function() {
-               console.log('SUCCESS!');
+               alert('Message has been sent');
            }, function(error) {
-               console.log('FAILED...', error);
+               alert('FAILED...', error);
            });
+
+       
    });
 }
