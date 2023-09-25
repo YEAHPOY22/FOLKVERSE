@@ -3,6 +3,7 @@
 }
 body{
     background: #f1fbff;
+    overflow-x: hidden;
 }
 h2{
     font-size: 3rem;
@@ -73,6 +74,42 @@ h3{
 .w-100{
     height: 100vh;
 }
+/* for animation effect */
+.about #popup, .service #popup,
+.team #popup, .contact #popup{
+    transition: 0.5s ease-in-out;
+    opacity: 0;
+    transform: scale(0);
+}
+.about.show-animate #popup, 
+.service.show-animate #popup,
+.team.show-animate #popup,
+.contact.show-animate #popup {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.service #left, .team #left{
+    position: relative;
+    left: -500px;
+    transition: 0.4s ease-in-out;
+}
+.service.show-animate #left, .team.show-animate #left{
+    position: relative;
+    left: 0;
+}
+.service #right, .team #right{
+    position: relative;
+    right: -500px;
+    transition: 0.4s ease-in-out;
+}
+.service.show-animate #right, .team.show-animate #right{
+    right: 0;
+}
+
+/* end of animation effect  */
+
+
 .about p{
     text-align: justify;
     font-size: 1rem;
