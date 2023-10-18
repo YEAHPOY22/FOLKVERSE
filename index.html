@@ -8,7 +8,7 @@
     <title>Folkverse</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="icon" href="img/VCGEC LOGO.png">
+    <link rel="icon" href="img/logo.png">
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
@@ -18,7 +18,7 @@
     
     <nav id="header" class="navbar navbar-expand-lg navbar-light bg-light fixed-top border-bottom">
         <div class="container">
-          <a class="navbar-brand" href="#">Folk<span class="text-warning">Verse</span></a>
+          <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -43,40 +43,40 @@
       </nav>
 
       <div data-bs-spy="scroll" data-bs-target="#navbarSupportedContent" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-        <div id="carouselExampleCaptions" class="carousel slide " data-ride="carousel" >
+        <div id="carouselCaptions" class="carousel slide " data-bs-ride="carousel" >
           <div class="carousel-indicators ">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
           </div>
           <div class="carousel-inner" id="home">
-            <div class="carousel-item active">
-              <img src="img/bg_2d1.png" class="d-block w-100" alt="">
+            <div class="carousel-item active" data-bs-interval="3000">
+              <img src="img/bg_improved.gif" class="d-block w-100" >
               <div class="carousel-caption">
                 <h5>image 1</h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi velit corporis odio, maxime perspiciatis officiis?</p>
                 <p><a href="#" class="btn btn-warning ">Download</a></p>
               </div>
             </div>
-            <div class="carousel-item">
-              <img src="img/bg_2d2.png" class="d-block w-100" alt="">
+            <div class="carousel-item" data-bs-interval="6000">
+              <img src="img/bg_2d2.png" class="d-block w-100" >
               <div class="carousel-caption ">
                 <h5>image 2</h5>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quaerat cum ducimus nesciunt et sit.</p>
                 <p><a href="#" class="btn btn-warning ">Download</a></p>
               </div>
             </div>
-            <div class="carousel-item">
-              <img src="img/bg_2d3.png" class="d-block w-100" alt="">
+            <div class="carousel-item" data-bs-interval="9000">
+              <img src="img/bg_2d3.png" class="d-block w-100" >
               <div class="carousel-caption ">
                 <h5>image 3</h5>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, aspernatur. Ea cumque soluta quaerat possimus.</p>
                 <p><a href="#" class="btn btn-warning ">Download</a></p>
               </div>
             </div>
-            <div class="carousel-item">
-              <img src="img/bg_2d4.jpg" class="d-block w-100" alt="">
+            <div class="carousel-item" data-bs-interval="12000">
+          <img src="img/bg_2d4.jpg" class="d-block w-100" >
               <div class="carousel-caption ">
                 <h5>image 4</h5>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, aspernatur. Ea cumque soluta quaerat possimus.</p>
@@ -85,11 +85,11 @@
             </div>
           </div>
 
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
@@ -300,13 +300,13 @@
         <div class="container d-flex justify-content-center flex-column">
           <ul class="navbar-nav d-flex flex-row justify-content-center">
             <li class="nav-item mx-3">
-              <a href="#" class="nav-link t">privacy policy</a>
+              <a href="privacy_policy.html" class="nav-link t">privacy policy</a>
             </li>
             <li class="nav-item mx-3">
               <a href="#" class="nav-link t">guidelines</a>
             </li>
             <li class="nav-item mx-3">
-              <a href="#" class="nav-link t">Terms & Condition</a>
+              <a href="terms&condition.html" class="nav-link t">Terms & Condition</a>
             </li>
           </ul>
           <p>&copy 2023 All right Reserved @FolkVerse</p>
